@@ -1,0 +1,23 @@
+column,description,source,year_selection_rule,manual_correction
+NY.GDP.MKTP.KD.ZG,GDP growth (annual %),"World Bank WDI, https://databank.worldbank.org/source/world-development-indicators","2023 if present, else 2022, else 2021",none
+NY.GDP.MKTP.KD.ZG_year,year actually used for NY.GDP.MKTP.KD.ZG,derived,see NY.GDP.MKTP.KD.ZG,none
+FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)","World Bank WDI, https://databank.worldbank.org/source/world-development-indicators","2023 if present, else 2022, else 2021",none
+FP.CPI.TOTL.ZG_year,year actually used for FP.CPI.TOTL.ZG,derived,see FP.CPI.TOTL.ZG,none
+SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)","World Bank WDI, https://databank.worldbank.org/source/world-development-indicators","2023 if present, else 2022, else 2021",none
+SL.UEM.TOTL.ZS_year,year actually used for SL.UEM.TOTL.ZS,derived,see SL.UEM.TOTL.ZS,none
+SP.DYN.IMRT.IN,"Mortality rate, infant (per 1,000 live births)","World Bank WDI, https://databank.worldbank.org/source/world-development-indicators","2023 if present, else 2022, else 2021",none
+SP.DYN.IMRT.IN_year,year actually used for SP.DYN.IMRT.IN,derived,see SP.DYN.IMRT.IN,none
+EG.ELC.ACCS.ZS,Access to electricity (% of population),"World Bank WDI, https://databank.worldbank.org/source/world-development-indicators","2023 if present, else 2022, else 2021",none
+EG.ELC.ACCS.ZS_year,year actually used for EG.ELC.ACCS.ZS,derived,see EG.ELC.ACCS.ZS,none
+IT.NET.USER.ZS,Individuals using the Internet (% of population),"World Bank WDI, https://databank.worldbank.org/source/world-development-indicators","2023 if present, else 2022, else 2021",none
+IT.NET.USER.ZS_year,year actually used for IT.NET.USER.ZS,derived,see IT.NET.USER.ZS,none
+NV.AGR.TOTL.ZS,"Agriculture, value added (% of GDP)","World Bank WDI, https://databank.worldbank.org/source/world-development-indicators","2023 if present, else 2022, else 2021",none
+NV.AGR.TOTL.ZS_year,year actually used for NV.AGR.TOTL.ZS,derived,see NV.AGR.TOTL.ZS,none
+NV.IND.TOTL.ZS,"Industry, value added (% of GDP)","World Bank WDI, https://databank.worldbank.org/source/world-development-indicators","2023 if present, else 2022, else 2021",none
+NV.IND.TOTL.ZS_year,year actually used for NV.IND.TOTL.ZS,derived,see NV.IND.TOTL.ZS,none
+NE.TRD.GNFS.ZS,Trade (% of GDP),"World Bank WDI, https://databank.worldbank.org/source/world-development-indicators","2023 if present, else 2022, else 2021",none
+NE.TRD.GNFS.ZS_year,year actually used for NE.TRD.GNFS.ZS,derived,see NE.TRD.GNFS.ZS,none
+hdi_2023,"UNDP Human Development Index score, 2023","UNDP HDR25, https://hdr.undp.org/data-center/documentation-and-downloads",2023 only,none
+country,country name (from WDI),World Bank WDI,n/a,none
+y,"target class: 0=Low (<0.550), 1=Medium/High (0.550-0.800), 2=Very High (>=0.800)",derived from hdi_2023,n/a,none
+DominantSector,largest of agriculture/industry/services share of GDP,"derived from NV.AGR.TOTL.ZS, NV.IND.TOTL.ZS",n/a,none
